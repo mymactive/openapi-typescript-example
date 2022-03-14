@@ -21,4 +21,4 @@ export type RequestData<
 export type ResponseData<
   Path extends UrlPaths,
   Method extends HttpMethods
-> = Get<paths, `${Path}.${Method}.response.200.content.application/json`>;
+> = Get<paths, `${Path}.${Method}.responses.200.content.application/json`>;
