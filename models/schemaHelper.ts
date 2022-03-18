@@ -5,13 +5,13 @@ export type UrlPaths = keyof paths;
 
 export type HttpMethods = keyof UnionToIntersection<paths[keyof paths]>;
 
-export type HttpMethodsFilterdByPath<Path extends UrlPaths> = HttpMethods &
+export type HttpMethodsFilteredByPath<Path extends UrlPaths> = HttpMethods &
   keyof UnionToIntersection<paths[Path]>;
 
 export type RequestParameters<
   Path extends UrlPaths,
   Method extends HttpMethods
-> = Get<paths, `${Path}.${Method}.parameters`>;
+> = Get<paths, `${Path}.${Method}.parameters.query`>;
 
 export type RequestData<
   Path extends UrlPaths,
