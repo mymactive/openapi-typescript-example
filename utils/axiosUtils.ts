@@ -6,7 +6,7 @@ export type AxiosConfigWrapper<
   Method extends schemaHelper.HttpMethods
 > = {
   url: Path;
-  method: Method & schemaHelper.HttpMethodsFilterdByPath<Path>;
+  method: Method & schemaHelper.HttpMethodsFilteredByPath<Path>;
   params?: schemaHelper.RequestParameters<Path, Method>;
   data?: schemaHelper.RequestData<Path, Method>;
 };

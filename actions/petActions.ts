@@ -14,5 +14,5 @@ const fetchAvailablePets = (name: string, photoUrls: string[]) =>
 const { data, error } = useAppSWR({
   url: "/pet/findByStatus",
   method: "get",
-  params: { query: { status: ["pending"] } },
+  params: { status: ["pending"] },
 });
