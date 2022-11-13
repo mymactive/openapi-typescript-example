@@ -24,6 +24,7 @@
     "@typescript-eslint/parser": "^5.42.1",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
+    "openapi-typescript": "^6.0.3",
     "prettier": "^2.7.1",
     "serve": "^14.1.1",
     "type-fest": "^3.2.0",
