@@ -1,6 +1,6 @@
 # openapi-typescript-example
 
-[【OpenAPI】APIスキーマから勝手に型がつくaxiosを作って幸せになる【openapi-typescript】](https://zenn.dev/sum0/articles/8e903ed05ba681)のサンプルレポジトリです
+[【OpenAPI】APIスキーマから勝手に型がつくaxiosを作って幸せになる【openapi-typescript】](https://zenn.dev/sum0/articles/8e903ed05ba681)のサンプルレポジトリです。
 
 ## openapi-typescriptのバージョンに関する注意
 
