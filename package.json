@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
+    "serve": "serve ./out",
     "lint": "next lint"
   },
   "dependencies": {
@@ -23,6 +25,7 @@
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "prettier": "^2.5.1",
+    "serve": "^13.0.4",
     "type-fest": "^2.12.0",
     "typescript": "4.6.2"
   }
