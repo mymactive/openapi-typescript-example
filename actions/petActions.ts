@@ -1,7 +1,16 @@
 import * as $axios from "../utils/axiosUtils";
 import { useAppSWR } from "../hooks/useAppSWR";
 
-const fetchAvailablePets = (name: string, photoUrls: string[]) =>
+export const fetchAvailablePets = () =>
+  $axios.request({
+    url: "/pet/findByTags",
+    method: "get",
+    params: {
+      tags: ["available"],
+    },
+  });
+
+const postPet = (name: string, photoUrls: string[]) =>
   $axios.request({
     url: "/pet",
     method: "post",
